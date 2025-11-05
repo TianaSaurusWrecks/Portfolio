@@ -26,6 +26,7 @@ nav {
     border-radius: 5px; /* circle */
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 10px;
     
 }
 
@@ -63,7 +64,7 @@ nav {
     padding: 0;
     flex-wrap: wrap;
     margin: 0;
-    gap: 15px;
+    gap: 10px;
 }
 
 .internal-links a {
@@ -73,6 +74,7 @@ nav {
     font-weight: bold;
     font-size: 25px;
     transition: color 0.3s;
+    margin-right: 20px;
 }
 
 .internal-links a:hover {
