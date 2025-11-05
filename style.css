@@ -61,6 +61,9 @@ nav {
     gap: 30px;
     margin-right: 80px;
     padding: 0;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 15px;
 }
 
 .internal-links a {
@@ -87,6 +90,8 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    overflow-x: hidden; /* prevent horizontal scroll */
+    box-sizing: border-box;
    
 }
 body {
@@ -458,6 +463,9 @@ main, section, footer, nav {
         flex-direction: column; /* stacks elements vertically */
         align-items: center;
     }
+    .internal-links {
+        font-size: 12px;
+    }
     
     }
 
@@ -465,12 +473,15 @@ main, section, footer, nav {
   .phone-container {
     left: 10%;   /* move closer to left edge */
     width: 80px; /* shrink slightly if needed */
+    flex-direction: column; /* stacks elements vertically */
+    align-items: center;
   }
 }
 @media (max-width: 500px) {
   .computer-container {
     left: 1%;   /* move closer to left edge */
-    
+    flex-direction: column; /* stacks elements vertically */
+    align-items: center;
     width: 380px; /* shrink slightly if needed */
   }
 }
@@ -478,10 +489,14 @@ main, section, footer, nav {
  @media (max-width: 800px) {
   .phone-container {
     left: 5%;
+    flex-direction: column; /* stacks elements vertically */
+    align-items: center;
   }
 
   .book-container {
     left: 55%; /* stay right of phone */
+    flex-direction: column; /* stacks elements vertically */
+    align-items: center;
   }
 }
 
