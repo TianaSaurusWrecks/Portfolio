@@ -1,0 +1,498 @@
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #a3c0a9;
+    padding: 10px 20px;
+    position: sticky; /* stays on top when scrolling */
+    top: 0;
+    z-index: 1000; /* ensures it stays above content */
+    flex-wrap: wrap; /* move items to next line when needed */
+    
+}
+
+/* picture and name section */
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-pic img {
+    height: 100px;
+    width: auto;
+    border:#b579a3 solid 4px;
+    border-radius: 5px; /* circle */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.nav-name {
+    color: #b579a3;
+    font-family: "Lily Script One", sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 50px;
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.nav-name a {
+    color:#b579a3;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-name a:hover {
+    color: #f981b4;
+}
+
+/* internal links */
+.internal-links ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 80px;
+    padding: 0;
+}
+
+.internal-links a {
+    color:#b579a3;
+    font-family: "Lily Script One", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s;
+}
+
+.internal-links a:hover {
+    color: #f981b4;
+}
+
+.internal-links a.active, .nav-name a.active {
+    color:#f981b4;
+    border-bottom: 3px solid #f981b4;
+}
+
+html, body {
+    scroll-behavior: smooth; /* optional smooth scroll */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+   
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1; /* take up available space */
+}
+
+section {
+    padding: 80px 40px;
+    /* min-height: 400px; */
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: 18px;
+    background-color: #b579a3;
+    }
+
+    section h2 {
+        color:#b579a3;
+        font-weight: bold;
+        font-size: 32px;
+    }
+
+    /* home page - tiana */
+    #home {
+        padding: 80px 40px;
+        min-height: 200px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        background-color: #fcf9f5;
+    }
+
+    /* Background Image of house */
+.house {
+    /* background-image: url("/images/theatre-edited-public-domain-vectorsunsplash.jpg"); */
+    background-image: url("Images/harisankar-sahoo-tVnqd8wmm98-unsplash\ -\ Copy.png"); 
+    position: relative;
+    /* background-size:cover; */
+    background-position: center;
+    width: 100%;
+    
+    
+    background-size: contain; /* keeps original dimensions */
+    background-repeat: no-repeat; /* don’t tile it */
+    background-position: center; /* center it */
+   
+    min-height: 80vh;
+    
+   
+    display: flex;
+    justify-content: flex-start; /* left side */
+    align-items: flex-end; /* bottom */
+    padding: 20px;
+    background-color:#e6ddf0;
+}
+
+
+
+
+.objects {
+    display: flex;
+    align-items: flex-end; /* keeps items same level */
+    gap: 40px;
+    position: relative;
+}
+
+.computer-container {
+   position: absolute;
+   bottom: 1px; /* distance from bottom of page */
+   left: 180px; /* distance form left edge */
+   /* width: 25%; scales with screen size */
+   width: 380px;
+   height: auto;
+   
+}
+
+.computer {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* min-width: 200px; */
+    /* position:relative; */
+}
+.computer:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+
+}
+
+/* items Area Overlay */
+.screen {
+    position: absolute;
+    top: 23%; /* adjust vertical placement */
+    left: 28%; /* adjust horizontal placement */
+    width: 20%; /* scale relative to computer */
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #000;
+    border-radius: 10px;
+     /* screen-glow */
+    box-shadow: 0 0 40px rgba(255, 250, 200, 0.7),
+    0 0 80px rgba(255, 255, 220, 0.5);
+    background-image: radial-gradient(circle at center,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.8),
+    rgba(240, 240, 240, 0.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transform: rotate(-5deg);
+    
+}   
+  
+   
+.screen a {
+    font-family: "Zen Maru Gothic", sans-serif; 
+    font-weight: bold;
+    color:#b579a3;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.screen a:hover {
+    color:#f981b4;
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.phone-container {
+  position: absolute;
+  bottom: 0; /* distance from bottom of page */
+  left: 98%; /* distance form left edge */
+  width: 120px;
+  height: auto;
+}
+.phone-img {
+    width: 150%; /* phone size */
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+.phone-img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+.phone-overlay {
+    position: absolute;
+    top: 55%;
+    left: 75%;
+    transform: translate(-50%, -50%); /* center overlay over phone */
+    width: 60px;
+    height: 0px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color:#b579a3;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer
+/* 
+    box-shadow: 0 0 30px rgba(255, 250, 200, 0.7),
+                0 0 60px rgba(255, 255, 220, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    
+
+}
+.phone-overlay:hover {
+    
+    filter: brightness(1.2);
+    color: #f981b4;
+}
+
+/* book container */
+.book-container {
+    position: absolute;
+    bottom: 1px;
+    left: 580px; /* adjust to the right of the phone */
+    width: 220px;
+    height: auto;
+}
+
+.book-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.book-img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* overlay for book */
+.book-overlay {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-28deg);
+    width: 50px;
+    height: 50px;
+
+    background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color:#b579a3;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  /* screen glow */
+  box-shadow: 0 0 30px rgba(255, 250, 200, 0.7),
+              0 0 60px rgba(255, 255, 220, 0.5);
+}
+
+.book-overlay:hover {
+  
+  filter: brightness(1.2);
+  color: #f981b4;
+}
+
+
+
+
+#lower-section {
+    background-color:#b579a3;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-top: solid 12px #92925f; */
+    
+        
+}
+
+
+    
+    #picture-links {
+        min-height: 200px;
+    }
+
+
+
+    /* about page */
+    #about {
+        padding: 80px 40px;
+        min-height: 200px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        background-color: #fcf9f5;
+    }
+
+
+
+
+
+    /* resume page */
+    #resume {
+        padding: 80px 40px;
+        min-height: 200px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        background-color: #fcf9f5;
+    }
+
+
+
+
+    /* projects page */
+    #projects {
+        padding: 80px 40px;
+        min-height: 200px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        background-color: #fcf9f5;
+    }
+
+
+
+
+
+
+
+    #contact {
+        padding: 80px 40px;
+        min-height: 200px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-top: 40px;
+        background-color: #fcf9f5;
+    }
+
+
+/* Footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a3c0a9;
+    padding: 10px 20px;
+    margin-top: auto; /* pushes footer to bottom */
+    width: 100%;
+    box-sizing: border-box;
+    border-top:#b579a3 10px solid;
+    
+}
+
+.social-icons-container ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    align-items: center;
+}
+.social-icons-container ul li { /*spaces out icons*/
+    /* margin-left: 15px; */
+    display: flex;
+}
+.social-icons-container ul li a {
+    color:#b579a3;
+    font-size: 28px;
+    transition: color 0.3s ease; /*smooths the color change when hovering*/
+}
+.social-icons-container ul li a:hover {
+    color:#f981b4;
+}
+
+
+
+main, section, footer, nav {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* responsiveness */
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column; /* stacks elements vertically */
+        align-items: center;
+    }
+    
+    }
+
+@media (max-width: 500px) {
+  .phone-container {
+    left: 10%;   /* move closer to left edge */
+    width: 80px; /* shrink slightly if needed */
+  }
+}
+@media (max-width: 500px) {
+  .computer-container {
+    left: 1%;   /* move closer to left edge */
+    
+    width: 380px; /* shrink slightly if needed */
+  }
+}
+
+ @media (max-width: 800px) {
+  .phone-container {
+    left: 5%;
+  }
+
+  .book-container {
+    left: 55%; /* stay right of phone */
+  }
+}
+
+@media (max-width: 500px) {
+  .phone-container {
+    left: 10%;
+    width: 80px;
+  }
+  .book-container {
+    left: 75%;
+    width: 180px;
+  }
+}
+ 
