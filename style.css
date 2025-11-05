@@ -510,4 +510,23 @@ main, section, footer, nav {
     width: 180px;
   }
 }
- 
+
+/* Target devices with a maximum height of 600px */
+@media (max-height: 700px) {
+    .computer-container,
+    .phone-container,
+    .book-container,
+    .sofa-area {
+        bottom: 2%;      /* adjust vertical placement */
+        width: 32%;      /* shrink objects to fit */
+
+    }
+
+    .book-container {
+        left: 25px;
+    }
+    .internal-links ul {
+        gap: 10px;       /* tighten nav links */
+        font-size: 18px; /* smaller text */
+    }
+}
