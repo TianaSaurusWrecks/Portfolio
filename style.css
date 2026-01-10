@@ -679,7 +679,7 @@ nav {
 }
 
 #music img {
- width: 140px;
+ max-width: 140px;
  height: auto;
  border-radius: 15px;
 }
