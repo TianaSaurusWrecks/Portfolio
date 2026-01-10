@@ -368,6 +368,14 @@ section {
         background-color: #fcf9f5;
     }
 
+    #credits {
+        padding: 20px 40px 20px;
+        min-height: 50px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        background-color: #e6ddf0;
+        font-size: 14px;
+    }
 
 
 
@@ -531,4 +539,9 @@ main, section, footer, nav {
         gap: 10px;       /* tighten nav links */
         font-size: 18px; /* smaller text */
     }
+
+ 
+
+
+    
 }
