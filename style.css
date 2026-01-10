@@ -441,10 +441,10 @@ section h3 {
 
 /* projects page */
 #projects {
-  padding: 80px 40px;
+  padding: 50px 40px;
   min-height: 200px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   padding-top: 40px;
   background-color: #fcf9f5;
 }
@@ -482,15 +482,17 @@ section h3 {
 
 .projects-card h3 {
   padding: 10px;
+  padding-bottom: 0;
   text-align: center;
 }
 
 #websites {
-  padding: 80px 40px;
+  padding: 0px 40px;
+  padding-bottom: 40px;
   min-height: 100px;
   margin-top: 20px;
   margin-bottom: 30px;
-  padding-top: 40px;
+  
   background-color: #fcf9f5;
 }
 
@@ -498,6 +500,7 @@ section h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+ 
 }
 
 .website-card {
