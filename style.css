@@ -672,7 +672,7 @@ nav {
 
   min-height: 245px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   background-color: #e6ddf0;
   font-size: 16px;
   text-align: center;
@@ -697,6 +697,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 1rem; /* spacing between tracks */
+  color: #b579a3;
 }
 
 .track {
@@ -711,11 +712,12 @@ nav {
   border: none;
   display: block;
   margin: 0 auto;
+  
 }
 
 .track-info {
   font-size: 10px;
-  color: #666666;
+  color: #b579a3;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -726,7 +728,7 @@ nav {
 }
 
 .track-info a {
-  color: #666666;
+  color: #b579a3;
   text-decoration: none;
   
 }
