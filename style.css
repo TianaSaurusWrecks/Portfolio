@@ -403,7 +403,7 @@ section h3 {
 #credits {
   padding: 30px 30px 100px 30px;
 
-  min-height: 180px;
+  min-height: 200px;
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: #e6ddf0;
@@ -736,4 +736,18 @@ nav {
 .track-info a:hover {
   text-decoration: underline;
   color: #6495ed;
+}
+
+.track iframe {
+  width: 50%;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .track iframe {
+    width: 100%;
+    height: 120px; /* 👈 this stops the orange overlay */
+  }
 }
