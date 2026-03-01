@@ -588,14 +588,6 @@ section h3 {
         aspect-ratio: 16 / 9;
         object-fit: cover; */
 
-#contact {
-  padding: 80px 40px;
-  min-height: 200px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding-top: 40px;
-  background-color: #fcf9f5;
-}
 
 /* Footer */
 .footer {
@@ -822,3 +814,115 @@ nav {
     grid-template-columns: repeat(3, 1fr);
   }
 } */
+
+#contact {
+  padding: 80px 40px;
+  min-height: 200px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+  background-color: #fcf9f5;
+  text-align:center
+}
+
+
+.contact-section {
+  max-width: 600px;
+  margin: 40px auto 70px auto;
+  padding: 15px 20px 20px 20px;
+  border-radius: 8px;
+  background-color:#d3b2c9
+  
+
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 30px;;
+  text-align: center;
+  color:whitesmoke;
+  font-weight: bold;
+  
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.form-group textarea {
+  min-height: 300px; /* or 200px */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #f981b4;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.btn-primary {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color:#a3c0a9; 
+  color: whitesmoke;
+  font-size: 1.5rem;
+  
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  
+}
+
+.btn-primary:hover {
+  background-color: #a2ebb2;
+  color:#b579a3 
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+#thanks {
+  padding: 80px 40px;
+  min-height: 200px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+  background-color: #fcf9f5;
+  text-align:center
+}
+
+#thanks h2 {
+  margin: 40px;
+  font-size: 2.4rem;
+}
+
+#thanks p {
+  margin-top: 40px;
+  font-size: 1.2rem;
+}
