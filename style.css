@@ -276,12 +276,10 @@ section h3 {
 /* book container */
 .book-container {
   position: absolute;
-  
   bottom: 1px;
   left: 580px; /* adjust to the right of the phone */
   width: 220px;
   height: auto;
-  
 }
 
 .book-img {
@@ -351,7 +349,7 @@ section h3 {
   margin-bottom: 30px;
   padding-top: 40px;
   background-color: #fcf9f5;
-  text-align:center;
+  text-align: center;
 }
 
 .about-cards {
@@ -492,7 +490,7 @@ section h3 {
   margin-bottom: 30px;
   padding-top: 40px;
   background-color: #fcf9f5;
-  text-align:center
+  text-align: center;
 }
 
 /* projects page */
@@ -648,180 +646,10 @@ nav {
   }
 }
 
-
-@media (max-width: 380px) {
-  .computer-container,
-  .phone-container,
-  .book-container,
-  .sofa-area {
-    /* bottom: %; adjust vertical placement */
-    width: 22%; /* shrink objects to fit */
-    position: absolute;
-  }
-
-  .computer-container{
-    width: 800px;
-    height: auto;
-    
-  }
-
-  .computer {
-  width: 200px;
-  height: auto;
-  display: block;
-  /* min-width: 200px; */
-  /* position:relative; */
-}
-
-.screen {
-  position: absolute;
-  top: 21%; /* adjust vertical placement */
-  left: 48%; /* adjust horizontal placement */
-  width: 25%; /* scale relative to computer */
-  height: 18%;
-  background-color: rgba(255, 255, 255, 0.85);
-  color: #000;
-  border-radius: 10px;
-  /* screen-glow */
-  box-shadow: 0 0 40px rgba(255, 250, 200, 0.7),
-    0 0 80px rgba(255, 255, 220, 0.5);
-  background-image: radial-gradient(
-    circle at center,
-    rgba(255, 255, 255, 0.95),
-    rgba(255, 255, 255, 0.8),
-    rgba(240, 240, 240, 0.6)
-  );
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  cursor: pointer;
-  transform: rotate(-5deg);
-}
-
-.screen a {
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: bold;
-  color: #b579a3;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-
-  /* book container */
-.book-container {
-  position:absolute;
-  
-  
-  /* left: 0px; adjust to the right of the phone */
-  width: 420px;
-  height: auto;
-  margin-left: 170px;
-  
-  
-}
-
-.book-img {
-  width: 300%;
-  height: auto;
-  
-  transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
-}
-
-  .book-overlay {
-  position: absolute;
-  top: 50%;
-  left: 175%;
-  transform: translate(-50%, -50%) rotate(-28deg);
-  width: 10px;
-  height: 0px;
-
-  /* background-color: rgba(255, 255, 255, 0.85); */
-  border-radius: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: bold;
-  font-size: 13px;
-  color: #b579a3;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  /* screen glow */
-  /* box-shadow: 0 0 30px rgba(255, 250, 200, 0.7), */
-    /* 0 0 60px rgba(255, 255, 220, 0.5); */
-}
-
-.phone-container {
-  position: absolute;
-  /* bottom: 0; distance from bottom of page */
-  
-  
-  left: 0%; /* distance from left edge */
-  width: 150px;
-  
-  height: auto;
-}
-.phone-img {
-  width: 180%; /* phone size */
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
-}
-.phone-img:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2);
-}
-.phone-overlay {
-  position: absolute;
-  top: 55%;
-  left: 75%;
-  transform: translate(-50%, -50%); /* center overlay over phone */
-  width: 60px;
-  height: 0px;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  color: #b579a3;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  /* 
-    box-shadow: 0 0 30px rgba(255, 250, 200, 0.7),
-                0 0 60px rgba(255, 255, 220, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; */
-}
-.phone-overlay:hover {
-  filter: brightness(1.2);
-  color: #f981b4;
-}
-
-
-
-  .internal-links ul {
-    gap: 10px; /* tighten nav links */
-    font-size: 18px; /* smaller text */
-  }
-
-  
-}
-
-
-
 @media (max-width: 500px) {
   .phone-container {
     left: 10%; /* move closer to left edge */
-    width: 60px; /* shrink slightly if needed */
+    width: 80px; /* shrink slightly if needed */
     flex-direction: column; /* stacks elements vertically */
     align-items: center;
   }
@@ -831,7 +659,7 @@ nav {
     left: 1%; /* move closer to left edge */
     flex-direction: column; /* stacks elements vertically */
     align-items: center;
-    width: 340px; /* shrink slightly if needed */
+    width: 380px; /* shrink slightly if needed */
   }
 }
 
@@ -861,11 +689,11 @@ nav {
 @media (max-width: 500px) {
   .phone-container {
     left: 10%;
-    width: 70px;
+    width: 80px;
   }
   .book-container {
     left: 75%;
-    width: 160px;
+    width: 180px;
   }
 }
 
@@ -898,13 +726,6 @@ nav {
     gap: 10px; /* tighten nav links */
     font-size: 18px; /* smaller text */
   }
-
-  
-
-
-
-
-
 }
 
 #music {
@@ -1012,7 +833,7 @@ nav {
   margin-bottom: 30px;
   padding-top: 40px;
   background-color: #fcf9f5;
-  text-align:center
+  text-align:center;
 }
 
 
@@ -1117,6 +938,13 @@ nav {
   font-size: 1.2rem;
 }
 
+@media (max-width: 1024px) {
+  .phone-container {
+    left: 5%;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+  }
 
 
 @media (max-width: 360px) {
@@ -1127,6 +955,14 @@ nav {
     height: auto;
     
   }
+  .book-overlay {
+  position: absolute;
+  top: 48%;
+  left: 53%;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  width: 0px;
+  height: 0px;
+  font-size: 18px;
 
   .computer {
   width: 60%;
@@ -1135,8 +971,23 @@ nav {
   /* min-width: 200px; */
   
 }
+  .computer-container {
+    width: 45%;
+  }
 
-.screen {
+}
+
+/* ========== 912px and below ========== */
+@media (max-width: 912px) {
+  .phone-container {
+    left: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .computer-container {
+    width: 55%;
+  }
+  .screen {
   position: absolute;
   top: 21%; /* adjust vertical placement */
   left: 17%; /* adjust horizontal placement */
@@ -1164,13 +1015,24 @@ nav {
 }
 
 .screen a {
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: bold;
-  color: #b579a3;
-  font-size: 13px;
-  text-decoration: none;
+  font-size: 22px;
+  
 }
 
+  .book-container {
+    left: 95%;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  .book-overlay {
+  position: absolute;
+  top: 48%;
+  left: 53%;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  width: 0px;
+  height: 0px;
+  font-size: 18px;
 
   /* book container */
 .book-container {
@@ -1184,23 +1046,29 @@ nav {
   margin-left: 20px;
   
   
+
 }
 
 .book-img {
   width: 30%;
   height: auto;
   
-  transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
 }
 
+  .book-container {
+    left: 95%;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
   .book-overlay {
   position: absolute;
   top: 50%;
   left: 15%;
   transform: translate(-50%, -50%) rotate(-28deg);
-  width: 10px;
+  width: 0px;
   height: 0px;
+  font-size: 18px;
 
   /* background-color: rgba(255, 255, 255, 0.85); */
   border-radius: 10%;
@@ -1220,9 +1088,24 @@ nav {
     /* 0 0 60px rgba(255, 255, 220, 0.5); */
 }
 
-.phone-container {
+
+
+
+@media (max-width: 768px) {
+  .phone-container {
+    left: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .computer-container {
+    width: 40%;
+  }
+  .screen {
   position: absolute;
-  /* bottom: 0; distance from bottom of page */
+  top: 23%; /* adjust vertical placement */
+  left: 28%; /* adjust horizontal placement */
+  width: 18%; /* scale relative to computer */
+  height: 18%;
   
   left: 0%; /* distance from left edge */
   width: 100%;
@@ -1232,14 +1115,21 @@ nav {
   width: 20%; /* phone size */
   height: auto;
   
-  transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
+
 }
-.phone-img:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2);
+
+.screen a {
+  font-size: 12px;
+  
 }
-.phone-overlay {
+
+  .book-container {
+    left: 95%;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  .book-overlay {
   position: absolute;
   top: 50%;
   left: 10%;
@@ -1263,18 +1153,71 @@ nav {
                 0 0 60px rgba(255, 255, 220, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
-.phone-overlay:hover {
-  filter: brightness(1.2);
-  color: #f981b4;
+
+
+
 }
 
-
-
-  .internal-links ul {
-    gap: 10px; /* tighten nav links */
-    font-size: 18px; /* smaller text */
+/* ========== 400px and below ========== */
+@media (max-width: 430px) {
+  /* Only put things here that are DIFFERENT from 500px */
+    .phone-container {
+    left: 10%;
+    width: 40px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  
+  .computer-container {
+    left: 1%;
+    width: 190px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-container {
+    left: 95%;
+    width: 80px;
+  }
+  .book-overlay {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  width: 0px;
+  height: 0px;
+  font-size: 12px;
+
 }
 
+.screen {
+  position: absolute;
+  top: 23%; /* adjust vertical placement */
+  left: 28%; /* adjust horizontal placement */
+  width: 17%; /* scale relative to computer */
+  height: 15%;
+  
+
+}
+
+.screen a {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: bold;
+  color: #b579a3;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.phone-container {
+  position: absolute;
+  bottom: 0; /* distance from bottom of page */
+  width: 20%;
+  
+}
+.phone-overlay {
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  font-size: 12px;
+
+}
