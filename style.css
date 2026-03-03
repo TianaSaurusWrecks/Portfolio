@@ -844,56 +844,18 @@ nav {
 
 
 
-@media (max-width: 860px) {
+@media (max-width: 820px) {
   .phone-container {
-    left: 0px;
-    right: 100px;
+    left: 5%;
     flex-direction: column; /* stacks elements vertically */
     align-items: center;
   }
 
   .book-container {
-    left: 95%; /* stay right of phone */
+    left: 55%; /* stay right of phone */
     flex-direction: column; /* stacks elements vertically */
     align-items: center;
   }
-
-  .phone-container {
-  position: absolute;
-  /* bottom: 0; distance from bottom of page */
-  
-  left: 0%; /* distance from left edge */
-  width: 100%;
-  height: auto;
-}
-.phone-img {
-  width: 35%; /* phone size */
-  height: auto;
-  
-  transition: transform 0.3s ease, filter 0.3s ease;
-  cursor: pointer;
-}
-
-.phone-overlay {
-  position: absolute;
-  top: 50%;
-  left: 17%;
-  transform: translate(-50%, -50%); /* center overlay over phone */
-  width: 5px;
-  height: 0px;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  color: #b579a3;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-
 }
 
 @media (max-width: 500px) {
@@ -1157,19 +1119,17 @@ nav {
 
 
 
-@media (max-width: 540px) {
+@media (max-width: 360px) {
  
   
   .computer-container{
     width: 100%;
     height: auto;
     
-    
-    
   }
 
   .computer {
-  width: 50%;
+  width: 60%;
   height: auto;
   
   /* min-width: 200px; */
@@ -1179,9 +1139,9 @@ nav {
 .screen {
   position: absolute;
   top: 21%; /* adjust vertical placement */
-  left: 14%; /* adjust horizontal placement */
-  width: 8%; /* scale relative to computer */
-  height: 17%;
+  left: 17%; /* adjust horizontal placement */
+  width: 10%; /* scale relative to computer */
+  height: 18%;
   background-color: rgba(255, 255, 255, 0.85);
   color: #000;
   border-radius: 10px;
@@ -1218,16 +1178,16 @@ nav {
   
   
   /* left: 0px; adjust to the right of the phone */
-  left: 165px;
+  left: 190px;
   width: 100%;
   height: 85px;;
-  margin-left: 45px;
+  margin-left: 20px;
   
   
 }
 
 .book-img {
-  width: 24%;
+  width: 30%;
   height: auto;
   
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -1236,8 +1196,8 @@ nav {
 
   .book-overlay {
   position: absolute;
-  top: 45%;
-  left: 13%;
+  top: 50%;
+  left: 15%;
   transform: translate(-50%, -50%) rotate(-28deg);
   width: 10px;
   height: 0px;
@@ -1249,7 +1209,7 @@ nav {
   align-items: center;
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 13px;
   color: #b579a3;
   text-decoration: none;
   text-align: center;
@@ -1267,10 +1227,9 @@ nav {
   left: 0%; /* distance from left edge */
   width: 100%;
   height: auto;
-  
 }
 .phone-img {
-  width: 15%; /* phone size */
+  width: 20%; /* phone size */
   height: auto;
   
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -1283,7 +1242,7 @@ nav {
 .phone-overlay {
   position: absolute;
   top: 50%;
-  left:7%;
+  left: 10%;
   transform: translate(-50%, -50%); /* center overlay over phone */
   width: 5px;
   height: 0px;
@@ -1294,7 +1253,7 @@ nav {
   align-items: center;
   font-family: "Zen Maru Gothic", sans-serif;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 15px;
   color: #b579a3;
   text-decoration: none;
   text-align: center;
