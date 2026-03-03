@@ -936,8 +936,6 @@ nav {
     align-items: center;
     width: 20%;
   }
-
-  
   .book-container {
     left: 95%;
     flex-direction: column;
@@ -952,39 +950,32 @@ nav {
   width: 0px;
   height: 0px;
   font-size: 18px;
-
 }
   .computer-container {
-    width: 45%;
+    width: 35%;
   }
-
 }
 
 /* ========== 912px and below ========== */
 @media (max-width: 912px) {
   .phone-container {
     left: 5%;
-    flex-direction: column;
     align-items: center;
+    width: 20%;
   }
   .computer-container {
-    width: 55%;
+    width: 40%;
   }
   .screen {
   position: absolute;
   top: 23%; /* adjust vertical placement */
   left: 28%; /* adjust horizontal placement */
-  width: 22%; /* scale relative to computer */
-  height: 22%;
-  
-
+  width: 20%; /* scale relative to computer */
+  height: 20%;
 }
-
 .screen a {
   font-size: 22px;
-  
 }
-
   .book-container {
     left: 95%;
     flex-direction: column;
@@ -999,7 +990,6 @@ nav {
   width: 0px;
   height: 0px;
   font-size: 18px;
-
 }
 }
 
@@ -1018,15 +1008,10 @@ nav {
   left: 28%; /* adjust horizontal placement */
   width: 18%; /* scale relative to computer */
   height: 18%;
-  
-
 }
-
 .screen a {
   font-size: 18px;
-  
 }
-
   .book-container {
     left: 95%;
     flex-direction: column;
@@ -1041,12 +1026,8 @@ nav {
   width: 0px;
   height: 0px;
   font-size: 18px;
-
 }
 }
-
-
-
 
 @media (max-width: 768px) {
   .phone-container {
@@ -1063,15 +1044,10 @@ nav {
   left: 28%; /* adjust horizontal placement */
   width: 18%; /* scale relative to computer */
   height: 18%;
-  
-
 }
-
 .screen a {
   font-size: 18px;
-  
 }
-
   .book-container {
     left: 95%;
     flex-direction: column;
@@ -1086,55 +1062,44 @@ nav {
   width: 0px;
   height: 0px;
   font-size: 18px;
-
 }
 }
 
-
-/* ========== 500px and below ========== */
+/* ========== 540px and below ========== */
 @media (max-width: 540px) {
   nav {
     flex-direction: column;
     align-items: center;
   }
-
   .internal-links {
     font-size: 12px;
   }
-
   .phone-container {
     left: 8%;
     width: 50px;
-    
   }
-
   .computer-container {
     left: 1%;
     width: 380px;
     flex-direction: column;
     align-items: center;
   }
-
   .book-container {
     left: 85%;
     width: 80px;
   }
-
     .phone-container {
     left: 5%;
     flex-direction: column;
     align-items: center;
     width: 23%;
   }
-
   .phone-overlay {
   position: absolute;
   top: 55%;
   left: 75%;
   font-size: 12px;
-
 }
-
   .computer-container {
     width: 35%;
   }
@@ -1144,15 +1109,10 @@ nav {
   left: 28%; /* adjust horizontal placement */
   width: 14%; /* scale relative to computer */
   height: 14%;
-  
-
 }
-
 .screen a {
   font-size: 12px;
-  
 }
-
   .book-container {
     left: 95%;
     flex-direction: column;
