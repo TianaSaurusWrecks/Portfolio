@@ -972,20 +972,19 @@ nav {
   
 }
   .computer-container {
-    width: 45%;
+    width: 35%;
   }
-
 }
 
 /* ========== 912px and below ========== */
 @media (max-width: 912px) {
   .phone-container {
     left: 5%;
-    flex-direction: column;
     align-items: center;
+    width: 20%;
   }
   .computer-container {
-    width: 55%;
+    width: 40%;
   }
   .screen {
   position: absolute;
@@ -1013,12 +1012,9 @@ nav {
   cursor: pointer;
   transform: rotate(-5deg);
 }
-
 .screen a {
   font-size: 22px;
-  
 }
-
   .book-container {
     left: 95%;
     flex-direction: column;
@@ -1054,7 +1050,6 @@ nav {
   height: auto;
   
 }
-
   .book-container {
     left: 95%;
     flex-direction: column;
@@ -1088,9 +1083,6 @@ nav {
     /* 0 0 60px rgba(255, 255, 220, 0.5); */
 }
 
-
-
-
 @media (max-width: 768px) {
   .phone-container {
     left: 5%;
@@ -1117,12 +1109,9 @@ nav {
   
 
 }
-
 .screen a {
   font-size: 12px;
-  
 }
-
   .book-container {
     left: 95%;
     flex-direction: column;
