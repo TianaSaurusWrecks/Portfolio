@@ -929,6 +929,143 @@ nav {
   font-size: 1.2rem;
 }
 
+@media (max-width: 2500px) {
+  .phone-container {
+    left: 5%;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+  }
+  .book-container {
+    left: 95%;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  .book-overlay {
+  position: absolute;
+  top: 48%;
+  left: 53%;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  width: 0px;
+  height: 0px;
+  font-size: 16px;
+}
+  .computer-container {
+    width: 20%;
+  }
+  .screen {
+  position: absolute;
+  top: 23%; /* adjust vertical placement */
+  left: 28%; /* adjust horizontal placement */
+  width: 21%; /* scale relative to computer */
+  height: 20%;
+}
+.screen a {
+  font-size: 18px;
+}
+  .phone-overlay {
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  font-size: 14px;
+}
+}
+
+
+
+@media (max-width: 1800px) {
+  .phone-container {
+    left: 5%;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+  }
+  .book-container {
+    left: 95%;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  .book-overlay {
+  position: absolute;
+  top: 48%;
+  left: 53%;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  width: 0px;
+  height: 0px;
+  font-size: 14px;
+}
+  .computer-container {
+    width: 25%;
+  }
+  .screen {
+  position: absolute;
+  top: 23%; /* adjust vertical placement */
+  left: 28%; /* adjust horizontal placement */
+  width: 20%; /* scale relative to computer */
+  height: 20%;
+}
+.screen a {
+  font-size: 16px;
+}
+  .phone-overlay {
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  font-size: 14px;
+}
+}
+
+
+
+
+
+@media (max-width: 1280px) {
+  .phone-container {
+    left: 5%;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+  }
+  .book-container {
+    left: 95%;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  .book-overlay {
+  position: absolute;
+  top: 48%;
+  left: 53%;
+  transform: translate(-50%, -50%) rotate(-28deg);
+  width: 0px;
+  height: 0px;
+  font-size: 14px;
+}
+  .computer-container {
+    width: 25%;
+  }
+  .screen {
+  position: absolute;
+  top: 23%; /* adjust vertical placement */
+  left: 28%; /* adjust horizontal placement */
+  width: 18%; /* scale relative to computer */
+  height: 18%;
+}
+.screen a {
+  font-size: 16px;
+}
+  .phone-overlay {
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  font-size: 14px;
+}
+}
+
+
+
 @media (max-width: 1024px) {
   .phone-container {
     left: 5%;
@@ -949,15 +1086,31 @@ nav {
   transform: translate(-50%, -50%) rotate(-28deg);
   width: 0px;
   height: 0px;
-  font-size: 18px;
+  font-size: 14px;
 }
   .computer-container {
-    width: 35%;
+    width: 25%;
   }
+  .screen {
+  position: absolute;
+  top: 23%; /* adjust vertical placement */
+  left: 28%; /* adjust horizontal placement */
+  width: 16%; /* scale relative to computer */
+  height: 16%;
+}
+.screen a {
+  font-size: 16px;
+}
+  .phone-overlay {
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  font-size: 14px;
+}
 }
 
 /* ========== 912px and below ========== */
-@media (max-width: 912px) {
+@media (max-width: 932px) {
   .phone-container {
     left: 5%;
     align-items: center;
@@ -1080,7 +1233,7 @@ nav {
   }
   .computer-container {
     left: 1%;
-    width: 380px;
+    width: 40%;
     flex-direction: column;
     align-items: center;
   }
@@ -1134,9 +1287,9 @@ nav {
 
 }
 
-/* ========== 400px and below ========== */
+/* ========== 430px and below ========== */
 @media (max-width: 430px) {
-  /* Only put things here that are DIFFERENT from 500px */
+  
     .phone-container {
     left: 10%;
     width: 40px;
