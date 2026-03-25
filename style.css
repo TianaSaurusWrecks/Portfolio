@@ -501,6 +501,8 @@ section h3 {
   margin-bottom: 0px;
   padding-top: 40px;
   background-color: #fcf9f5;
+
+
 }
 
 .projects-grid {
@@ -525,7 +527,7 @@ section h3 {
 
 .projects-card img {
   width: 100%;
-  height: 520px;
+  /* height: 520px; */
   display: block;
 }
 
