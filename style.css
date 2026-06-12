@@ -35,6 +35,10 @@ nav {
   display: block;
 }
 
+.normal-pic {
+  position: relative;
+}
+
 .smile-pic {
   position: absolute;
   top:0;
