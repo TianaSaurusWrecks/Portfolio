@@ -1,3 +1,37 @@
+/* html, body {
+  overflow-y: scroll;
+  margin-right: 0;
+  padding-right: 0;
+  
+} */
+
+/* html {
+  scrollbar-gutter:;
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+  
+  
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b579a3; 
+  border-radius: 10px;
+  
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f981b4; 
+}
+
+
 /* Nav Bar */
 nav {
   display: flex;
@@ -516,12 +550,15 @@ section h3 {
 /* resume page */
 #resume {
   padding: 80px 40px;
-  min-height: 200px;
+  min-height: 400px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   padding-top: 40px;
   background-color: #fcf9f5;
   text-align: center;
+}
+#resume h3 {
+margin-top: 60px;
 }
 
 /* projects page */
@@ -532,6 +569,7 @@ section h3 {
   margin-bottom: 0px;
   padding-top: 40px;
   background-color: #fcf9f5;
+  text-align: center;
 
 
 }
@@ -889,6 +927,7 @@ nav {
 .form-group {
   display: flex;
   flex-direction: column;
+  
 }
 
 .form-group label {
@@ -912,7 +951,7 @@ nav {
 }
 
 .form-group textarea {
-  min-height: 300px; /* or 200px */
+  min-height: 500px; /* or 200px */
 }
 
 .form-group input:focus,
@@ -1142,6 +1181,15 @@ nav {
   left: 75%;
   font-size: 14px;
 }
+.contact-section {
+  max-width: 600px;
+  max-height: 800px;
+
+}
+.form-group textarea {
+  min-height: 400px; /* or 200px */
+}
+
 }
 
 /* ========== 912px and below ========== */
@@ -1215,6 +1263,15 @@ nav {
   height: 0px;
   font-size: 18px;
 }
+.contact-section {
+  max-width: 500px;
+  max-height: 600px;
+
+}
+.form-group textarea {
+  min-height: 200px; /* or 200px */
+}
+
 }
 
 @media (max-width: 768px) {
@@ -1251,7 +1308,18 @@ nav {
   height: 0px;
   font-size: 18px;
 }
+
+.contact-section {
+  max-width: 400px;
+  max-height: 600px;
+
 }
+.form-group textarea {
+  min-height: 200px; /* or 200px */
+}
+
+}
+
 
 /* ========== 540px and below ========== */
 @media (max-width: 540px) {
@@ -1319,8 +1387,15 @@ nav {
 }
 
 
+.contact-section {
+  max-width: 400px;
+  max-height: 600px;
 
 }
+.form-group textarea {
+  min-height: 200px; /* or 200px */
+}
+
 
 /* ========== 430px and below ========== */
 @media (max-width: 430px) {
@@ -1384,4 +1459,12 @@ nav {
   left: 75%;
   font-size: 12px;
 
+}
+.contact-section {
+  max-width: 300px;
+  max-height: 600px;
+
+}
+.form-group textarea {
+  min-height: 200px; /* or 200px */
 }
