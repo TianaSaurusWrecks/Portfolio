@@ -174,7 +174,7 @@ section {
   /* min-height: 400px; */
   font-family: "Zen Maru Gothic", sans-serif;
   font-size: 18px;
-  background-color: #b579a3;
+  background-color: #D3B2C9;
 }
 
 section h2 {
@@ -559,6 +559,20 @@ section h3 {
 }
 #resume h3 {
 margin-top: 60px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color:#D3B2C9;
+  color: #FCF9F5;
+  font-size: 58px;
+  
+  
 }
 
 /* projects page */
