@@ -256,18 +256,19 @@ section h3 {
   left: 28%; /* adjust horizontal placement */
   width: 20%; /* scale relative to computer */
   height: 20%;
-  background-color: rgba(255, 255, 255, 0.85);
+  /* background-color: rgba(255, 255, 255, 0.85); */
   color: #000;
   border-radius: 10px;
   /* screen-glow */
-  box-shadow: 0 0 40px rgba(255, 250, 200, 0.7),
-    0 0 80px rgba(255, 255, 220, 0.5);
-  background-image: radial-gradient(
+  /* box-shadow: 0 0 40px rgba(255, 250, 200, 0.7), */
+    /* 0 0 80px rgba(255, 255, 220, 0.5); */
+  /* background-image: radial-gradient(
     circle at center,
     rgba(255, 255, 255, 0.95),
     rgba(255, 255, 255, 0.8),
-    rgba(240, 240, 240, 0.6)
-  );
+    rgba(240, 240, 240, 0.6) */
+  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,12 +295,12 @@ section h3 {
 .phone-container {
   position: absolute;
   bottom: 0; /* distance from bottom of page */
-  left: 98%; /* distance form left edge */
+  left: -2%; /* distance from left edge */
   width: 120px;
   height: auto;
 }
 .phone-img {
-  width: 150%; /* phone size */
+  width: 70%; /* phone size */
   height: auto;
   display: block;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -309,30 +310,8 @@ section h3 {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
-.phone-overlay {
-  position: absolute;
-  top: 55%;
-  left: 75%;
-  transform: translate(-50%, -50%); /* center overlay over phone */
-  width: 60px;
-  height: 0px;
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  color: #b579a3;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  /* 
-    box-shadow: 0 0 30px rgba(255, 250, 200, 0.7),
-                0 0 60px rgba(255, 255, 220, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; */
-}
+
+
 .phone-overlay:hover {
   filter: brightness(1.2);
   color: #f981b4;
@@ -341,14 +320,20 @@ section h3 {
 /* book container */
 .book-container {
   position: absolute;
-  bottom: 1px;
-  left: 580px; /* adjust to the right of the phone */
-  width: 220px;
+ 
+  bottom: 0;
+  left: 5560px; /* adjust to the right of the phone */
+  width: 120px;
   height: auto;
+/*   
+  justify-content: center;
+  align-items: center;
+   */
 }
 
 .book-img {
-  width: 100%;
+  width: 50%;
+  display: block;
   height: auto;
   display: block;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -360,37 +345,7 @@ section h3 {
   filter: brightness(1.2);
 }
 
-/* overlay for book */
-.book-overlay {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-28deg);
-  width: 50px;
-  height: 50px;
 
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  color: #b579a3;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  /* screen glow */
-  box-shadow: 0 0 30px rgba(255, 250, 200, 0.7),
-    0 0 60px rgba(255, 255, 220, 0.5);
-}
-
-.book-overlay:hover {
-  filter: brightness(1.2);
-  color: #f981b4;
-}
 
 #lower-section {
   background-color: #b579a3;
@@ -1017,63 +972,57 @@ nav {
   font-size: 1.2rem;
 }
 
-@media (max-width: 2500px) {
+@media (max-width: 3600px) {
   .phone-container {
-    left: 5%;
+    left: 0%;
     flex-direction: column;
     align-items: center;
-    width: 20%;
+    width: 12%;
+    padding-right: 10px;
+    margin-left: 17px;
   }
   .book-container {
-    left: 95%;
+    left: 24%;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 15%;
+    padding-left: 30px;
+    margin-left: 17px;
   }
-  .book-overlay {
-  position: absolute;
-  top: 48%;
-  left: 53%;
-  transform: translate(-50%, -50%) rotate(-28deg);
-  width: 0px;
-  height: 0px;
-  font-size: 16px;
-}
+
   .computer-container {
-    width: 20%;
+    width: 15%;
+    margin-left: 85px;
   }
-  .screen {
-  position: absolute;
-  top: 23%; /* adjust vertical placement */
-  left: 28%; /* adjust horizontal placement */
-  width: 21%; /* scale relative to computer */
-  height: 20%;
-}
-.screen a {
-  font-size: 18px;
-}
-  .phone-overlay {
-  position: absolute;
-  top: 55%;
-  left: 75%;
-  font-size: 14px;
-}
+  
+
 }
 
 
 
-@media (max-width: 1800px) {
+@media (max-width: 2000px) {
   .phone-container {
-    left: 5%;
+    /* left: 5%;
     flex-direction: column;
     align-items: center;
-    width: 20%;
+    width: 20%; */
+    padding-left: 30px;
+    margin-left: 17px;
+
+    left: 0%;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    padding-right: 10px;
   }
   .book-container {
-    left: 95%;
+
+    left: 32%;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 15%;
+    padding-left: 30px;
+    margin-left: 17px;
   }
   .book-overlay {
   position: absolute;
@@ -1085,7 +1034,12 @@ nav {
   font-size: 14px;
 }
   .computer-container {
-    width: 25%;
+    
+    /* padding-left: 30px; */
+    
+    width: 18%;
+    margin-left: 85px;
+  }
   }
   .screen {
   position: absolute;
@@ -1103,36 +1057,34 @@ nav {
   left: 75%;
   font-size: 14px;
 }
-}
 
 
 
 
 
-@media (max-width: 1280px) {
+
+@media (max-width: 1580px) {
   .phone-container {
-    left: 5%;
+    left: 0%;
     flex-direction: column;
     align-items: center;
-    width: 20%;
+    width: 15%;
   }
   .book-container {
-    left: 95%;
+   
+    margin-left: 1px;
+
+    left: 35%;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 15%;
+    padding-right: 10px;
   }
-  .book-overlay {
-  position: absolute;
-  top: 48%;
-  left: 53%;
-  transform: translate(-50%, -50%) rotate(-28deg);
-  width: 0px;
-  height: 0px;
-  font-size: 14px;
-}
+
   .computer-container {
-    width: 25%;
+    
+    width: 18%;
+    margin-left: 85px;
   }
   .screen {
   position: absolute;
@@ -1154,18 +1106,26 @@ nav {
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1324px) {
   .phone-container {
-    left: 5%;
+   
+    left: 0%;
     flex-direction: column;
     align-items: center;
-    width: 20%;
+    width: 18%;
+
+   
   }
   .book-container {
-    left: 95%;
+    
+
+    margin-left: 1px;
+
+    left: 40%;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 18%;
+    padding-right: 10px;
   }
   .book-overlay {
   position: absolute;
@@ -1178,6 +1138,9 @@ nav {
 }
   .computer-container {
     width: 25%;
+    margin-left: 50px;
+    margin-right: 40px;
+    
   }
   .screen {
   position: absolute;
@@ -1206,15 +1169,48 @@ nav {
 
 }
 
-/* ========== 912px and below ========== */
-@media (max-width: 932px) {
+@media (max-width: 1210px) {
   .phone-container {
-    left: 5%;
+   
+
+    left: 0%;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+  }
+  .computer-container {
+    
+    
+
+    width: 25%;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .book-container {
+    
+
+    margin-left: 1px;
+
+    left: 46%;
+    flex-direction: column;
+    align-items: center;
+    width: 24%;
+    padding-right: 10px;
+  }
+
+/* ========== 912px and below ========== */
+@media (max-width: 981px) {
+  .phone-container {
+    left: 3%;
     align-items: center;
     width: 20%;
   }
   .computer-container {
-    width: 40%;
+   
+    width: 30%;
+    
+    margin-left: 50px;
+    margin-right: 60px;
   }
   .screen {
   position: absolute;
@@ -1227,10 +1223,17 @@ nav {
   font-size: 22px;
 }
   .book-container {
-    left: 95%;
+
+    margin-left: 1px;
+
+    left: 52%;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 26%;
+    padding-right: 10px;
+
+    
+
   }
   .book-overlay {
   position: absolute;
@@ -1243,14 +1246,20 @@ nav {
 }
 }
 
-@media (max-width: 853px) {
+@media (max-width: 885px) {
   .phone-container {
-    left: 5%;
+    
     flex-direction: column;
     align-items: center;
+    left: 3%;
+    align-items: center;
+    width: 25%;
   }
   .computer-container {
-    width: 40%;
+    width: 35%;
+  
+    margin-left: 50px;
+    margin-right: 60px;
   }
   .screen {
   position: absolute;
@@ -1263,10 +1272,14 @@ nav {
   font-size: 18px;
 }
   .book-container {
-    left: 95%;
+    
+    margin-left: 10px;
+
+    left: 60%;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 28%;
+    padding-right: 10px;
   }
   .book-overlay {
   position: absolute;
@@ -1288,14 +1301,18 @@ nav {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 789px) {
   .phone-container {
     left: 5%;
     flex-direction: column;
     align-items: center;
+    width: 25%;
   }
   .computer-container {
-    width: 40%;
+    
+    width: 37%;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .screen {
   position: absolute;
@@ -1308,15 +1325,19 @@ nav {
   font-size: 18px;
 }
   .book-container {
-    left: 95%;
+
+    margin-left: 10px;
+
+    left: 64%;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 28%;
+    padding-right: 10px;
   }
   .book-overlay {
   position: absolute;
   top: 48%;
-  left: 53%;
+  left: 58%;
   transform: translate(-50%, -50%) rotate(-28deg);
   width: 0px;
   height: 0px;
@@ -1335,8 +1356,8 @@ nav {
 }
 
 
-/* ========== 540px and below ========== */
-@media (max-width: 540px) {
+
+@media (max-width: 642px) {
   nav {
     flex-direction: column;
     align-items: center;
@@ -1344,61 +1365,42 @@ nav {
   .internal-links {
     font-size: 12px;
   }
-  .phone-container {
-    left: 8%;
-    width: 50px;
-  }
-  .computer-container {
-    left: 1%;
-    width: 40%;
-    flex-direction: column;
-    align-items: center;
-  }
-  .book-container {
-    left: 85%;
-    width: 80px;
-  }
-    .phone-container {
-    left: 5%;
-    flex-direction: column;
-    align-items: center;
-    width: 23%;
-  }
-  .phone-overlay {
-  position: absolute;
-  top: 55%;
-  left: 75%;
-  font-size: 12px;
-}
-  .computer-container {
-    width: 35%;
-  }
-  .screen {
-  position: absolute;
-  top: 23%; /* adjust vertical placement */
-  left: 28%; /* adjust horizontal placement */
-  width: 14%; /* scale relative to computer */
-  height: 14%;
-}
-.screen a {
-  font-size: 12px;
-}
-  .book-container {
-    left: 95%;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-  }
-  .book-overlay {
-  position: absolute;
-  top: 48%;
-  left: 53%;
-  transform: translate(-50%, -50%) rotate(-28deg);
-  width: 0px;
-  height: 0px;
-  font-size: 12px;
 
-}
+  .computer-container {
+    left: 17%;
+    
+    flex-direction: column;
+    align-items: center;
+    width: 38%;
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+ 
+  .phone-container {
+    
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    left: -5%;
+    
+    
+
+  }
+  
+  
+  
+  .book-container {
+    
+
+    margin-left: 10px;
+
+    left: 60%;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+    padding-right: 10px;
+  }
+
 
 
 .contact-section {
@@ -1415,65 +1417,49 @@ nav {
 @media (max-width: 430px) {
   
     .phone-container {
-    left: 10%;
-    width: 40px;
+   
+
+    left: 0%;
     flex-direction: column;
     align-items: center;
+    width: 25%;
   }
 
   .computer-container {
-    left: 1%;
-    width: 190px;
-    flex-direction: column;
-    align-items: center;
+    left: 0%;
+
+    width: 37%;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .book-container {
-    left: 95%;
-    width: 80px;
+    left: 25%;
+    width: 20%;
+
+    margin-left: 10px;
+
+    left: 64%;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+    padding-right: 10px;
   }
-  .book-overlay {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-28deg);
-  width: 0px;
-  height: 0px;
-  font-size: 12px;
-
-}
-
-.screen {
-  position: absolute;
-  top: 23%; /* adjust vertical placement */
-  left: 28%; /* adjust horizontal placement */
-  width: 17%; /* scale relative to computer */
-  height: 15%;
   
 
-}
 
-.screen a {
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: bold;
-  color: #b579a3;
-  font-size: 14px;
-  text-decoration: none;
-}
+
+
+
 
 .phone-container {
   position: absolute;
   bottom: 0; /* distance from bottom of page */
-  width: 20%;
+  width: 25%;
+  left: 0;
   
 }
-.phone-overlay {
-  position: absolute;
-  top: 55%;
-  left: 75%;
-  font-size: 12px;
 
-}
 .contact-section {
   max-width: 300px;
   max-height: 600px;
@@ -1481,4 +1467,6 @@ nav {
 }
 .form-group textarea {
   min-height: 200px; /* or 200px */
+}
+
 }
