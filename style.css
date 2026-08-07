@@ -1350,7 +1350,7 @@ nav {
 
 }
 .form-group textarea {
-  min-height: 200px; /* or 200px */
+  min-height: 200px; 
 }
 
 }
@@ -1382,6 +1382,7 @@ nav {
     align-items: center;
     width: 25%;
     left: -5%;
+    
     
     
 
