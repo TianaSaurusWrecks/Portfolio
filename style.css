@@ -243,6 +243,7 @@ section h3 {
   display: block;
   /* min-width: 200px; */
   /* position:relative; */
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 .computer:hover {
   filter: brightness(1.2);
