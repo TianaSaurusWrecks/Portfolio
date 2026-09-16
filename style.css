@@ -441,7 +441,7 @@ section h3 {
 
 .duoembed {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   margin-top: 40px;
   font-family: "Zen Maru Gothic", sans-serif !important;
   color:#b579a3;
@@ -455,7 +455,39 @@ section h3 {
   justify-content: center;
   margin: 40px auto 0;
   margin-top: 10px;
+  border-radius: 20px;
+  border: solid #b579a3 8px;
 }
+
+/* Steam stats */
+.steamembed {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  font-family: "Zen Maru Gothic", sans-serif !important;
+  color:#b579a3;
+
+  
+
+}
+.steamembed img {
+  max-width: 100%;
+  width: 400px;
+  display: block;
+  height: auto;
+  justify-content: center;
+  margin: 40px auto 0;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: solid #b579a3 8px;
+
+  
+}
+
+
+
+
+
 
 /* youtube link */
 /* card container */
