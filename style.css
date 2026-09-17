@@ -479,6 +479,11 @@ section h3 {
     color: #b579a3;
 }
 
+.spotify-embed h2 {
+    color: #b579a3;
+    font-family: "Zen Maru Gothic", sans-serif !important;
+}
+
 .spotify-player {
     width: 100%;
     background-color: #b579a3;
@@ -496,7 +501,22 @@ section h3 {
 
 @media (max-width: 768px) {
     .spotify-embed {
-        width: 90%;
+        width: 70%;
+        margin: 20px auto;
+    }
+     .spotify-embed h2 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .spotify-player {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .spotify-player iframe {
+        width: 100%;
     }
 }
 
