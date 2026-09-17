@@ -448,6 +448,7 @@ section h3 {
   margin-top: 30px;
   font-family: "Zen Maru Gothic", sans-serif !important;
   color:#b579a3;
+  
 
   
 
@@ -462,13 +463,42 @@ section h3 {
   margin-top: 10px;
   border-radius: 20px;
   
+  
+  
 
   
 }
 
+/* Spotify embed */
 
+.spotify-embed {
+    width: 50%;
+    margin: 30px auto 20px;
+    text-align: center;
+    font-family: "Zen Maru Gothic", sans-serif !important;
+    color: #b579a3;
+}
 
+.spotify-player {
+    width: 100%;
+    background-color: #b579a3;
+    padding: 10px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
 
+.spotify-player iframe {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .spotify-embed {
+        width: 90%;
+    }
+}
 
 
 /* youtube link */
@@ -494,7 +524,7 @@ section h3 {
   
 }
 
-/* the image itself */
+/* the image */
 #youtube-link img {
   width: 100%;
   height: auto;              
